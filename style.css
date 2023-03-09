@@ -1,0 +1,208 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x:hidden;
+    max-width: 100%;
+    position: relative;
+} 
+
+html,body{
+    height:100%;
+}
+
+h2{
+    font-size: 2.5rem;
+    line-height: 125%;
+    padding: 1rem 0rem;
+}
+
+h3{
+    font-size: 1.25rem;
+    line-height: 125%;
+}
+
+
+:root{
+    --main-color: #f8b281;
+    --secondary-color: #1b1b1b;
+}
+
+.links{
+    position: absolute;
+    background:white;
+    width:100%;
+    height:100vh;
+    left:0;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translate(100%) 
+}
+.links a{
+    color: #1b1b1b;
+    font-size: 2rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    margin-left: 0.25rem;
+}
+
+.logo img{
+    height:100px;
+    width: 100px;
+}
+
+
+.front-page{
+    min-height: 100vh;
+    color:white;
+}
+
+section{
+    padding: 5%;
+}
+.selling-point{
+    margin-top: 25vh;
+    text-shadow: 0px 4px 12px black;
+    text-align: center;
+}
+.ctas button{
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border:none;
+    box-shadow: 0px 4px 24px white;
+    margin:1rem;
+    cursor: pointer; 
+    transition: 0.5s ease;
+}
+.ctas button:hover{
+    transform: scale(1.2);
+}
+.cta-main{
+    background-color: var(--secondary-color);
+    color: black;
+}
+.cta-main a{
+    text-decoration: none;
+    color:white;
+}
+.cta-sec{
+    background-color: var(--secondary-color);
+    color:white;
+
+}
+
+.ctas{
+    margin-top: 2rem;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav svg{
+    cursor: pointer;
+    z-index: 10;
+}
+
+.hero{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+.classes{
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.videos video{
+    width: auto;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+.meditation, 
+.yoga, 
+.pilates{
+    position: relative;
+}
+.videos h3{
+    position: absolute;
+    color:var(--main-color);
+    text-shadow: 0px 2px 12px black;
+    bottom:10%;
+    left:50%;
+    transform: translate(-50%, -10%);
+    font-size: 2rem;
+}
+
+.about{
+    color:var(--secondary-color)
+}
+
+.about h2{
+    text-align: center;
+}
+
+.about p{
+    line-height: 150%;
+    font-size: 1.2rem;
+}
+
+.about img{
+    width: 100%;
+    margin-top: 2rem;
+
+}
+@media screen and (min-width:768px){
+    body{
+        padding:0%;
+        overflow-X:hidden;
+        width: 100;
+    }
+
+    .classes-description{
+        position: absolute;
+        top:105vh;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .videos{
+        display:flex;
+        gap: 2rem;
+        position: absolute;
+        top:120vh;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .about{
+      display: flex;
+      gap: 5rem;
+      justify-content: space-between; 
+      position:absolute; 
+      top:220vh;
+    }
+
+    .about img{
+        width:50%;
+    }
+}
